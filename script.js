@@ -27,14 +27,14 @@ $(document).ready(function(){
 			keepUser = true;
 			keepUserCount = actualUser;
 			style = 'success'
-			newRowContent = '<tr class="' + style +'"><td>' + formatDateString(startCount) + '</td><td>' + weekendImg + '</td></tr>';
+			newRowContent = '<tr scope="row" class="' + style +'"><td>' + formatDateString(startCount) + '</td><td>' + weekendImg + '</td></tr>';
 		} else {
 			if (count == 1) {
 				style = 'danger'
 			} else {
 				style = 'warning'
 			}
-			newRowContent = '<tr class="' + style +'" ><td>' + formatDateString(startCount) + '</td><td>' + users[actualUser] + '</td></tr>';
+			newRowContent = '<tr scope="row" class="' + style +'" ><td>' + formatDateString(startCount) + '</td><td>' + users[actualUser] + '</td></tr>';
 		}
 
 		if (yesterdayFound) {
