@@ -1,5 +1,5 @@
 var startCount = new Date(2017,1,15);
-var nextDaysToShow = 12;
+var nextDaysToShow = 11; // if 10 = yesterday (1) + next days (10) 
 var weekendImg = '<img src="img/beer.png" alt="Smiley face" height="32" width="32">';
 
 $(document).ready(function(){
@@ -10,7 +10,7 @@ $(document).ready(function(){
 	var keepUser = false;
 	var keepUserCount = -1;
 	
-	jQuery("#nextDays").append('Próximos ' + nextDaysToShow + ' dias');
+	jQuery("#nextDays").append('Próximos ' + (nextDaysToShow -1) + ' dias');
 
 	var yesterday = new Date();
 	yesterday.setDate(yesterday.getDate() - 1);
@@ -30,7 +30,7 @@ $(document).ready(function(){
 			newRowContent = '<tr scope="row" class="' + style +'"><td>' + formatDateString(startCount) + '</td><td>' + weekendImg + '</td></tr>';
 		} else {
 			if (count == 1) {
-				style = 'danger'
+				style = 'warning'
 			} else {
 				style = 'warning'
 			}
@@ -55,7 +55,7 @@ $(document).ready(function(){
 		startCount.setDate(startCount.getDate() + 1);
 		count++;
 
-	} while (count < nextDaysToShow);
+	} while (count <= nextDaysToShow);
 	
 });
 
