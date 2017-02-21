@@ -1,5 +1,5 @@
 var startCount = new Date(2017,1,15);
-var nextDaysToShow = 11; // if 10 = yesterday (1) + next days (10) 
+var nextDaysToShow = 15; // if 10 = yesterday (1) + next days (10) 
 var weekendImg = '<img src="img/beer.png" alt="Smiley face" height="32" width="32">';
 
 $(document).ready(function(){
