@@ -10,7 +10,8 @@ $(document).ready(function(){
 	var keepUser = false;
 	var keepUserCount = -1;
 	
-	jQuery("#nextDays").append('Próximos ' + (nextDaysToShow -1) + ' dias');
+	//jQuery("#nextDays").append('Próximos ' + (nextDaysToShow -1) + ' dias');
+	jQuery("#nextDays").append('Próximos dias');
 
 	var yesterday = new Date();
 	yesterday.setDate(yesterday.getDate() - 1);
