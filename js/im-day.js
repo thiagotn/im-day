@@ -1,4 +1,4 @@
-var startCount = new Date(2017,1,15);
+var startCount = new Date(2017,4,24);
 var nextDaysToShow = 9; // if 10 = yesterday (1) + next days (10) 
 var weekendImg = '<img src="img/WhatsApp.png" alt="WhatsApp" height="32" width="32">';
 
