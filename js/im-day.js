@@ -3,7 +3,7 @@ var nextDaysToShow = 9; // if 10 = yesterday (1) + next days (10)
 var weekendImg = '<img src="img/WhatsApp.png" alt="WhatsApp" height="32" width="32">';
 
 $(document).ready(function(){
-	var users = ["Maicon", "Cezar", "Veiga", "Glauber", "Caio", "Gustavo", "Eduardo", "Thiago"];
+	var users = ["Maicon", "Veiga", "Glauber", "Caio", "Gustavo", "Eduardo", "Thiago"];
 	var count = 0;
 	var actualUser = 0;
 	var style = 'warning';
