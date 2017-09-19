@@ -1,9 +1,9 @@
-var startCount = new Date(2017,6,21); // month - 0 january... 1 february...
+var startCount = new Date(2017,8,18); // month - 0 january... 1 february...
 var nextDaysToShow = 9; // if 10 = yesterday (1) + next days (10) 
 var weekendImg = '<img src="img/WhatsApp.png" alt="WhatsApp" height="32" width="32">';
 
 $(document).ready(function(){
-	var users = ["Thiago", "Maicon", "Cezar", "Veiga", "Glauber", "Caio", "Gustavo"];
+	var users = ["Veiga", "Cezar", "Glauber", "Caio", "Gustavo", "Thiago"];
 	var count = 0;
 	var actualUser = 0;
 	var style = 'warning';
